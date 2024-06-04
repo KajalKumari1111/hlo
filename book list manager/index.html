@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Manager</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+        }
+        h1 {
+            color: #333;
+        }
+        #inputContainer {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        #inputContainer input {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            flex: 1;
+        }
+        #inputContainer button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #b56aea;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #inputContainer button:hover {
+            background-color: #c516a2;
+        }
+        #bookList {
+            margin-top: 20px;
+        }
+        .book-item {
+            background-color: white;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .book-item strong {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .book-item button {
+            margin-top: 10px;
+            padding: 5px 10px;
+            font-size: 14px;
+            color: white;
+            background-color: #dc3545;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .book-item button:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Book Manager</h1>
+    <div id="inputContainer">
+        <input type="text" id="titleInput" placeholder="Book Title">
+        <input type="text" id="authorInput" placeholder="Book Author">
+        <button onclick="addBook()">Add Book</button>
+    </div>
+    <div id="bookList"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

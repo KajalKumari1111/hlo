@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        
+
+        p{
+            color: rgb(13, 93, 67);
+        }
+        button {
+            margin: 15px 5px;
+            padding: 5px 40px;
+        }
+        input{
+           border: 2px solid rgb(209, 32, 120); 
+           padding: 4px;
+           border-radius: 5px;
+        }
+        button{
+            color: white;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+        
+        #push{
+            border: 2px solid rgb(16, 129, 125);
+            background-color: rgb(91, 162, 139);
+        }
+        #pop{
+            border: 2px solid rgb(49, 94, 170);
+            background-color: rgb(136, 150, 212);
+        }
+        #shift{
+            border: 2px solid rgb(117, 5, 151);
+            background-color: rgb(173, 136, 212)
+        }
+        #unshift{
+            border: 2px solid rgb(189, 96, 8);
+            background-color: rgb(214, 107, 39)
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Array Methods </h1>
+    <p>Current Array: <span id="arrayDisplay"></span></p>
+    <input type="text" id="arrayInput" placeholder="Enter a value">
+    <br>
+    <button id="push"  onclick="pushElement()">Push</button>
+    <button id="pop" onclick="popElement()">Pop</button>
+    <button id="shift" onclick="shiftElement()">Shift</button>
+    <button id="unshift" onclick="unshiftElement()">Unshift</button>
+
+    <script src="app.js"></script>
+</body>
+</html>
